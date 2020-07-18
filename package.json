@@ -9,11 +9,10 @@
   },
   "author": "Salman",
   "license": "ISC",
-  "devDependencies": {
-    "materialize-css": "^1.0.0-rc.2",
-    "node-sass": "^4.14.1"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "materialize-css": "^1.0.0",
+    "node-sass": "^4.14.1"
   }
 }
