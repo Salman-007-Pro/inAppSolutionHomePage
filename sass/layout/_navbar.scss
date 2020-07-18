@@ -1,0 +1,54 @@
+@import "./../abstracts/variables";
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  &-app-logo {
+    width: 6.5rem;
+    height: 6.5rem;
+    img {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+  &-navigation-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+  &-navigation {
+    align-self: end;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: $color-primary;
+    transition: all 0.5s;
+    &-line-top {
+      display: block;
+      width: 60%;
+      height: 2px;
+      border-bottom: 3px solid white;
+      margin: 2rem auto 0 auto;
+      border-radius: 10rem;
+    }
+    &-line-mid {
+      display: block;
+      width: 60%;
+      height: 2px;
+      border-bottom: 3px solid white;
+      margin: 0.7rem auto 0.7rem 2.3rem;
+      border-radius: 10rem;
+      transition: all 1s;
+    }
+    &-line-bottom {
+      display: block;
+      width: 60%;
+      height: 2px;
+      border-bottom: 3px solid white;
+      margin: 0 auto 2rem auto;
+      border-radius: 10rem;
+    }
+    &:hover &-line-mid {
+      margin: 0.7rem auto 0.7rem auto;
+    }
+  }
+}

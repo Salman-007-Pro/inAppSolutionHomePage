@@ -1,0 +1,46 @@
+@keyframes lineUpDown {
+  0% {
+    width: 1rem;
+  }
+  50% {
+    width: 10rem;
+  }
+  100% {
+    width: 1rem;
+  }
+}
+@keyframes borderLineUP {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes borderLineDown {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+@keyframes boxMoveDown {
+  from {
+    bottom: 20%;
+    right: 20%;
+  }
+  to {
+    bottom: 0;
+    right: 0;
+  }
+}

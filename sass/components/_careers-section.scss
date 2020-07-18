@@ -1,0 +1,94 @@
+@import "./../abstracts/variables";
+.careers-section {
+  margin: 25rem 0;
+  .careers-left-side-wrapper {
+    display: flex;
+    flex-direction: column;
+    .careers-left-side-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 10rem;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $color-border-shadow;
+      position: relative;
+      transition: all 2s;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        z-index: -1;
+        border-bottom: 4px solid $color-primary;
+        animation: borderLineDown 0.5s linear forwards;
+      }
+      &:hover::after {
+        animation: borderLineUP 0.5s linear forwards;
+      }
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      span {
+        font-size: 2.2rem;
+        display: block;
+        color: black;
+      }
+    }
+  }
+  .careers-right-side-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .right-side-top {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+      span {
+        display: inline-flex;
+        border: 1.5px solid $color-primary;
+        width: 5rem;
+        height: 1px;
+        margin-left: 2rem;
+        align-items: center;
+      }
+    }
+    .right-side-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+      h4 {
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.6rem;
+        text-align: justify;
+      }
+    }
+    .right-side-bottom {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 4rem 0;
+      span {
+        display: inline-flex;
+        border: 1.5px solid $color-primary;
+        width: 5rem;
+        height: 1px;
+        margin-right: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

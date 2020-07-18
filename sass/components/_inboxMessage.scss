@@ -1,0 +1,16 @@
+@import "./../abstracts/variables";
+.inbox-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 10;
+  font-size: 3.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: $color-primary;
+  color: white;
+}
